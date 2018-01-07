@@ -1,7 +1,6 @@
 import network
 
 import time
-import ubinascii
 
 import ssd1306
 from machine import I2C, Pin
@@ -33,7 +32,6 @@ while True:
         display.text("RSSI:%0.1f"%(ap[3]),0,16,1)
         display.text("Mode:"+authmode[ap[4]],0,24,1)
         histauth[ap[4]]+=1
-        #display.text("Mode: "+str(ap[4]),0,24,1)
         display.show()
         time.sleep(1)
         display.fill(0)
