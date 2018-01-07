@@ -1,0 +1,2 @@
+open ttyUSB0
+put main.py
